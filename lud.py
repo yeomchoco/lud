@@ -2,7 +2,6 @@ import os
 import sys
 from bs4 import BeautifulSoup
 from selenium import webdriver
-import time
 
 
 def restart():
