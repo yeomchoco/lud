@@ -126,7 +126,7 @@ def it_is_mine():
                 continue
 
     # 알림음
-    os.system("say 초코야 다돼써")
+    # os.system("say 초코야 다돼써")
 
     # 성공 화면
     def succeed():
@@ -137,14 +137,14 @@ def it_is_mine():
         while True:
             press = input("➤ 다음 작업을 알려주세요: ")
             if press == "0":
-                os.system("open .")
+                os.system("nautilus .")
             elif press == "1":
-                os.system(f"open {save_name}.mp4")
+                os.system(f"vlc {save_name}.mp4")
             elif press == "2":
                 it_is_mine()
             elif press == "3":
                 driver.close()
-                os.system("killall Terminal")
+                os.system("exit")
             else:
                 print("\n✘✘✘ 올바른 번호를 입력해주세요... ✘✘✘\n")
                 print("➤ 다시 시도하려면 ENTER 키를 눌러주세요\n")
